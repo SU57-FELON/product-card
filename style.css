@@ -1,4 +1,4 @@
-*  {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,11 +6,11 @@
   color: #515076;
 }
 
-ul  {
+ul {
   list-style-type: none;
 }
 
-.container  {
+.container {
   width: 1280px;
   margin: 0 auto;
   padding-left: 85px;
@@ -18,7 +18,7 @@ ul  {
   text-align: center;
 }
 
-.hero-wrapper  {
+.hero-wrapper {
   background-image: url('/images/bg-dandelions.png');
   background-size: cover;
   width: 846px;
@@ -26,7 +26,7 @@ ul  {
   position: relative;
 }
 
-.hero-wrapper-text  {
+.hero-wrapper-text {
   font-weight: 400;
   color: #515076;
   position: absolute;
@@ -38,7 +38,7 @@ ul  {
   z-index: 2;
 }
 
-.product-card-wrapper  {
+.product-card-wrapper {
   width: 1110px;
   display: flex;
   flex-wrap: wrap;
@@ -50,7 +50,7 @@ ul  {
   gap: 0px 25px;
 }
 
-.product-card  {
+.product-card {
   width: 340px;
   background-color: #F7F7FA;
   margin-bottom: 45px;
@@ -61,12 +61,12 @@ ul  {
   text-align: start;
 }
 
-.product-card__img  {
+.product-card__img {
   width: 290px;
   height: 245px;
 }
 
-.product-card__for-skin  {
+.product-card__for-skin {
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
@@ -75,7 +75,7 @@ ul  {
   margin-top: 30px;
 }
 
-.product-card__title  {
+.product-card__title {
   font-weight: 700;
   line-height: 20px;
   font-size: 20px;
@@ -83,28 +83,28 @@ ul  {
   margin-top: 10px;
 }
 
-.product-card__description  {
+.product-card__description {
   margin-top: 10px;
   color: #515076;
   font-size: 13px;
 }
 
-.product-card__composition  {
+.product-card__composition {
   margin-top: 15px;
 }
 
-.product-card__text  {
+.product-card__text {
   color: #515076;
   font-size: 13px;
 }
 
-.product-card__item  {
+.product-card__item {
   margin-left: 15px;
   display: flex;
   margin-top: 5px;
 }
 
-.product-card__item::before  {
+.product-card__item::before {
   width: 7px;
   height: 7px;
   content: '';
@@ -115,7 +115,7 @@ ul  {
   margin-top: 8px;
 }
 
-.product-card__price-wrapper  {
+.product-card__price-wrapper {
   margin-top: 25px;
   display: flex;
   justify-content: space-between;
@@ -123,6 +123,6 @@ ul  {
   width: 100%;
 }
 
-.product-card__price-text  {
+.product-card__price-text {
   font-weight: 700;
 }
