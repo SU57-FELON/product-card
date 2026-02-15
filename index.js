@@ -21,12 +21,12 @@ const googleOpenButton = document.getElementById('open-google-button');
 googleOpenButton.addEventListener('click', openGoogle);
 
 function openGoogle() {
-  const answer = confirm('Вы действительно хотите перейти на сайт гугл')
+  const answer = confirm('Вы действительно хотите перейти на сайт гугл');
   
   if(answer) {
     window.open('https://google.com');
   } else {
-    console.log('Пользователь отменил переход на Google')
+    console.log('Пользователь отменил переход на Google');
   }
 
 }
@@ -38,7 +38,7 @@ if(mainTitle) {
     console.log('Содержимое загаловка:', mainTitle.textContent);
   });
 } else {
-  console.warn('Главный заголовок не найден')
+  console.warn('Главный заголовок не найден');
 }
 
 const toggleButton = document.getElementById("toggle-btn");
@@ -49,6 +49,5 @@ toggleButton.addEventListener("click", () => {
 });
 
 titleText.addEventListener('mouseover', () => {
-  console.log(titleText.textContent)
-  
-}) 
+  console.log(titleText.textContent);
+}); 
