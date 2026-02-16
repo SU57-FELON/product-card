@@ -34,7 +34,7 @@ function openGoogle() {
 const mainTitle = document.getElementById('main-title');
 
 if(mainTitle) {
-  mainTitle.addEventListener('mouseenter',() => {
+  mainTitle.addEventListener('mouseenter', () => {
     console.log('Содержимое загаловка:', mainTitle.textContent);
   });
 } else {
