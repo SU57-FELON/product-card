@@ -1,8 +1,8 @@
-function cityTemp(city, temp) {
+function showTemperature(city, temp) {
   console.log(`Сейчас в ${city} , температура ${temp} градусов по Цельсию.`);
 }
 
-cityTemp("Махачкале", 20);
+showTemperature("Махачкале", 20);
 
 const LIGHT_SPEED = 299792458;
 
@@ -29,10 +29,10 @@ function buyCommunicationProduct(budget) {
 buyCommunicationProduct(500000);
 
 
-const server = ('HP ProLiant DL380 Gen10');
-const sanStorage = ('HP MSA 2070 SAN Storage');
-const route = ('Mikrotik CCR1036-8G-2S+EM');
+const server = 'HP ProLiant DL380 Gen10';
+const sanStorage = 'HP MSA 2070 SAN Storage';
+const route = 'Mikrotik CCR1036-8G-2S+EM';
 
-function Systeme1c() {
+function systeme1c() {
   console.log(`Для работы 1С:Предприятия 8.3 нам необходим сервер ${server}, SAN Storage ${sanStorage} и маршрутизатор ${route}.`);
 }; 
