@@ -6,7 +6,7 @@ showTemperature("Махачкале", 20);
 
 const LIGHT_SPEED = 300000000;
 
-function lightspeedСomparison(speed) {
+function compareLightspeed(speed) {
     if (LIGHT_SPEED < speed) {
         console.log("Сверхсветовая скорость!");
     } else if (LIGHT_SPEED > speed) {
@@ -15,10 +15,10 @@ function lightspeedСomparison(speed) {
         console.log("Равна скорости света!");
     }
 }
-lightspeedСomparison(300000000);
+compareLightspeed(300000000);
 
 const communactionProduct = "Dell Z9100-ON";
-const PRICE = 456_928;
+const price = 456_928;
 
 function buyCommunicationProduct(budget) {
     if (budget >= PRICE) {
