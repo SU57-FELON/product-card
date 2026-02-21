@@ -26,28 +26,4 @@ function openGoogle() {
   if(answer) {
     window.open('https://google.com');
   } else {
-    console.log('Пользователь отменил переход на Google');
-  }
-
-}
-
-const mainTitle = document.getElementById('main-title');
-
-if(mainTitle) {
-  mainTitle.addEventListener('mouseenter', () => {
-    console.log('Содержимое загаловка:', mainTitle.textContent);
-  });
-} else {
-  console.warn('Главный заголовок не найден');
-}
-
-const toggleButton = document.getElementById("toggle-btn");
-const titleText = document.getElementById*("title-text");
-
-toggleButton.addEventListener("click", () => {
-  toggleButton.classList.toggle("switch-color");
-});
-
-titleText.addEventListener('mouseover', () => {
-  console.log(titleText.textContent);
-}); 
+    c
