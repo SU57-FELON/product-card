@@ -18,7 +18,7 @@ function compareLightspeed(speed) {
 compareLightspeed(300000000);
 
 const communactionProduct = "Dell Z9100-ON";
-const price = 456_928;
+const price = 456928;
 
 function buyCommunicationProduct(budget) {
     if (budget >= PRICE) {
