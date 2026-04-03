@@ -57,7 +57,7 @@ libraryBooks.push({
   genre: "Программирование",
 });
 
-const universebooks = [
+const universeBooks = [
   {
     title: "Гарри Поттер и философский камень",
     author: "Дж. К. Роулинг",
@@ -82,7 +82,7 @@ const universebooks = [
   
 const allBooks = [
   ...libraryBooks,
-  ...universebooks, 
+  ...universeBooks, 
 ]
 
 const booksWithRare = allBooks.map(book => {
