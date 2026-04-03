@@ -36,15 +36,11 @@ console.log("Исходный массив чисел после реверса:
 const filtredComments = socialComments.filter(comment => comment.email.endsWith(".com"));
 
 // 8. Post Id 
-const usersWithAssignedPosts = socialComments.map(comment => {
-  if (comment.id <= 5)  {
-    return {...comment, postId: 2}
-  } else {
-    return {...comment, postId: 1}
-  }
-}); 
+const usersWithEditedPosts = socialComments.map(comment => {
+  return {...comment, postId: comment.id <= 5 ? 2 : 1};
+});
 
-console.log("Пользователи с назначенными постами:", usersWithAssignedPosts );
+console.log("Пользователи с отредактированными постами:", usersWithEditedPosts );
 
 // 9. Оставляем в объектах  только id и name
 const userProdiles = socialComments.map(comment => ({id: comment.id, name: comment.name }));
@@ -52,22 +48,18 @@ console.log("Профили пользователей:", userProdiles);
 
 // 10. Проверка длины комментария и добавление свойства isInvalid
 const processedMessages = socialComments.map(comment => {
-  if (comment.body.length > 180) {
-    return { ...comment, isInvalid: true } 
-  } else {
-    return { ...comment, isInvalid: false }
-  }
+  return {...comment, isInvalid: comment.body.length > 180};
 });
 
 console.log("Обработанные сообщения:", processedMessages);
 
 // --- Уровень 3 ---
 
-const emails = socialComments.reduce((acc, comment) => {
+const emailsByReduce = socialComments.reduce((acc, comment) => {
   return [...acc, comment.email];
 }, []);
 
-console.log("Массив email-ов:", emails);
+console.log("Массив email-ов:", emailsByReduce);
 
-const emaillist = socialComments.map(comment => ({email: comment.email}));
-console.log("Массив объектов с email-ами:", emaillist);
+const emailsByMap = socialComments.map(comment => ({email: comment.email}));
+console.log("Массив объектов с email-ами:", emailsByMap);
