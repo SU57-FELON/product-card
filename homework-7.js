@@ -43,8 +43,8 @@ const usersWithEditedPosts = socialComments.map(comment => {
 console.log("Пользователи с отредактированными постами:", usersWithEditedPosts );
 
 // 9. Оставляем в объектах  только id и name
-const userProdiles = socialComments.map(comment => ({id: comment.id, name: comment.name }));
-console.log("Профили пользователей:", userProdiles);
+const userProfiles = socialComments.map(({id, name}) => ({id, name}));
+console.log("Профили пользователей:", userProfiles);
 
 // 10. Проверка длины комментария и добавление свойства isInvalid
 const processedMessages = socialComments.map(comment => {
