@@ -24,7 +24,7 @@ function addMaxSpeed(auto) {
 }
 
 function getProperty(obj, property) {
-  console.log(obj[property]);
+  return obj[property];
 }
 
 console.log(getProperty(user, "name"));
@@ -57,7 +57,7 @@ libraryBooks.push({
   genre: "Программирование",
 });
 
-const universebooks = [
+const universeBooks = [
   {
     title: "Гарри Поттер и философский камень",
     author: "Дж. К. Роулинг",
@@ -82,14 +82,14 @@ const universebooks = [
   
 const allBooks = [
   ...libraryBooks,
-  ...universebooks, 
+  ...universeBooks, 
 ]
 
-const booksWithRare = allBooks.map(book => {
+const markedRareBooks = allBooks.map(book => {
   if (book.year < 2000) {
     return { ...book, isRare: true };
   }
   return book;
 });
 
-console.log(booksWithRare);
+console.log(markedRareBooks);
