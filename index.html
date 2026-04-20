@@ -12,33 +12,135 @@
   <title>Product card</title>
 </head>
 
-<body style="font-family: Montserrat;">
-  <button id="recolor-the-first-card">Перекрасить фон первой карточки</button>
-  <button id="recolor-all-card-button">Перекрасить фон всех карточек</button>
-  <button id="open-google-button">Открыть Google</button>
-  <button id="toggle-btn" class="toggle-button">Change of color</button>
-  <div class="container">
-    <div class="hero-wrapper">
-      <h1 class="hero-wrapper-text" id="main-title">Выбери свой продукт</h1>
-    </div>
-    <div class="product-card-wrapper">
-      <template id="product-card-template">
-        <div class="product-card">
-          <img src="" alt="" class="product-card__img">
-          <p class="product-card__for-skin"></p>
-          <h2 class="product-card__title"></h2>
-          <p class="product-card__description"></p>
-          <span class="product-card__text">Состав:</span>
-          <ul class="product-card__composition"></ul>
-          <div class="product-card__price-wrapper">
-            <span class="product-card__price-text">Цена</span>
-            <span class="product-card__price"></span>
-          </div>
-        </div>
-      </template>
-    </div>
+<body>
+  <div class="buttons">
+    <button id="recolor-the-first-card">Перекрасить фон первой карточки</button>
+    <button id="recolor-all-card-button">Перекрасить фон всех карточек</button>
+    <button id="open-google-button">Открыть Google</button>
+    <button id="toggle-btn" class="toggle-button">Change of color</button>
   </div>
-<script type="module" src="homework-8.js"></script>
+
+  <div class="container">
+    <div class="wrapper">
+      <div class="hero-wrapper">
+        <h1 class="hero-wrapper-text" id="main-title">Выбери свой продукт</h1>
+      </div>
+      <div class="product-card-wrapper">
+        <template id="product-card-template">
+          <div class="product-card">
+            <img src="" alt="" class="product-card__img">
+            <p class="product-card__for-skin"></p>
+            <h2 class="product-card__title"></h2>
+            <p class="product-card__description"></p>
+            <span class="product-card__text">Состав:</span>
+            <ul class="product-card__composition"></ul>
+            <div class="product-card__price-wrapper">
+              <span class="product-card__price-text">Цена</span>
+              <span class="product-card__price"></span>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+
+
+    <div class="overlay" id="overlay">
+      <div class="modal">
+        <button id="close-modal-btn">Закрыть</button>
+        <h3>Форма регистрации</h3>
+        <form id="registration-form">
+          <label for="name">Имя</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Ваше имя..."
+            required
+          />
+          <label for="surname">Фамилия:</label>
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="Ваша фамилия..."
+            required
+          />
+          <label for="birthData">Дата рождения:</label>
+          <input
+            type="date"
+            name="birthData"
+            id="birthData"
+            placeholder="Ваша дата рождения..."
+            required
+          />
+          <label for="login">Логин:</label>
+          <input
+            type="text"
+            name="login"
+            id="login"
+            placeholder="Ваш логин..."
+            required
+          />
+          <label for="password">Пароль:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Введите пароль..."
+            required
+            minlength="8"
+          />
+          <label for="password-confirm">Повторите пароль:</label>
+          <input
+            type="password"
+            name="passwordConfirm"
+            id="password-confirm"
+            placeholder="Повторите пароль..."
+            required
+            minlength="8"
+          />
+          <button type="submit">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+    <button id="open-modal-btn">Регистрация</button>
+    <footer class="footer">
+      <div class="footer__columns">
+        <div class ="footer__left">
+          <h3>Product Cards</h3>
+          <p>У нас Самые Лучшие Продукты Для Кожи!</p>
+        </div>
+        <div class ="footer__center">
+          <form id="email-form">
+            <label for="email">Введите ваш email</label>
+            <input id="email" type="email" name="email" required>
+            <button type="submit">Подписаться</button>
+          </form>
+        </div>
+        <div class ="footer__right">
+          <h3>Быстрые ссылки</h3>
+          <nav>
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <p>www.product-cards.com © all rights reserved</p>
+    </footer>
+
+
+  </div>
+
+
+
+
+
+  <!-- <script type="module" src="./homework-8.js"></script> -->
+  <script type="module" src="./homework-9.js"></script>
 </body>
 
 </html>
