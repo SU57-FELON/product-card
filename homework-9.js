@@ -5,6 +5,7 @@ import { Form } from './Form.js';
 
 const modal = new Modal("overlay");
 const form = new Form("registration-form");
+const email = new Form("email-form");
 
 renderProductCards(products);
 
