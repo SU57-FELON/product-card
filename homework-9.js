@@ -12,13 +12,20 @@ renderProductCards(products);
 console.log(products);
 
 console.log("JS загружен");
+
 const emailForm = document.getElementById("email-form");
 
 emailForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  const emailInput = document.getElementById("email");
-  const emailValue = emailInput.value;
+  const values = email.getValues();
+  const emailValue = values.get("email");
   console.log({ email: emailValue });
+  if (email.isValid()) {
+    alert("Спасибо за подписку!");
+    email.reset();
+  } else {
+    alert("Пожалуйста, введите корректный email."); 
+  }
 });
 
 const registrtion = document.getElementById("open-modal-btn");
