@@ -1,7 +1,7 @@
 import { products } from "./products.js";
 
 const productTemplate = document.querySelector('#product-card-template');
-function renderProductCards(products) {
+export function renderProductCards(products) {
 products.forEach(product => {
     const productClone = productTemplate.content.cloneNode(true);
     productClone.querySelector('.product-card__img').src = `images/${product.image}.png`;
