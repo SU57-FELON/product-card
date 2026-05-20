@@ -1,15 +1,18 @@
 export class Drink {
     #temperature;
     constructor (name, size, price, temperature) {
-        this.name = name;
-        this.size = size;
-        this.price = price;
-        this.#temperature = temperature;
-    }
+      if (new.target === Drink) {
+        throw new Error("Невозможно создать экземпляр абстрактного класса Drink");
+      }
+      this.name = name;
+      this.size = size;
+      this.price = price;
+      this.#temperature = temperature;
+    };
 
     getTemperature() {
       return this.#temperature;
-    }
+    };
     
     setTemperature(value) {
       this.#temperature = value;
