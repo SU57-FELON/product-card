@@ -1,0 +1,12 @@
+.overlay {
+  display: none;
+}
+.overlay-showed {
+  display: block;
+}
+.modal {
+  display: none;
+}
+.modal-showed {
+  display: block;
+}
