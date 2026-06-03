@@ -1,0 +1,37 @@
+{"users": [
+  {
+    "id": 1,
+    "name": "Max",
+    "surname": "Verstappen",
+    "email": "max.verstappen@gmail.com",
+    "age": 26
+  },
+  {
+    "id": 2,
+    "name": "Lewis",
+    "surname": "Hamilton",
+    "email": "lewis.hamilton@gmail.com",
+    "age": 38
+  },
+  {
+    "id": 3,
+    "name": "Fernando",
+    "surname": "Alonso",
+    "email": "fernando.alonso@gmail.com",
+    "age": 38
+  },
+  {
+    "id": 4,
+    "name": "Michael",
+    "surname": "Schumacher",
+    "email": "michael.schumacher@gmail.com",
+    "age": 35
+  },
+  {
+    "id": 5,
+    "name": "Sebastian",
+    "surname": "Vettel",
+    "email": "sebastian.vettel@gmail.com",
+    "age": 35
+  }
+]} 
