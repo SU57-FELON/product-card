@@ -11,7 +11,7 @@ export const products = [
     ], 
     price: 2750
   },
-  {
+  { 
     image: "moisturizing",
     skinType: 'для нормальной кожи',
     title: 'Увлажняющая маска',
